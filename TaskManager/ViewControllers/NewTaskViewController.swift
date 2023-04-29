@@ -15,11 +15,7 @@ final class NewTaskViewController: UIViewController {
     
     var tasks: [Task] = []
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        view.endEditing(true)
-    }
- 
+    
     @IBAction func addingButtonTapped() {
         let task = Task(
             task: textView.text,
@@ -46,5 +42,19 @@ final class NewTaskViewController: UIViewController {
         }
         
         return category
+    }
+}
+
+  // MARK: - UITextFieldDelegate
+
+extension NewTaskViewController: UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            super.touchesBegan(touches, with: event)
+            view.endEditing(true)
+        }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        
+        return true
     }
 }
