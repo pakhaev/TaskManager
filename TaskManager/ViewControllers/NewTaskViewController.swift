@@ -9,16 +9,18 @@ import UIKit
 
 final class NewTaskViewController: UIViewController {
 
-    @IBOutlet var textView: UITextView!
+    
+    @IBOutlet var taskTF: UITextField!
     @IBOutlet var segmentedControl: UISegmentedControl!
     @IBOutlet var datePicker: UIDatePicker!
+    
     
     var tasks: [Task] = []
     
     
     @IBAction func addingButtonTapped() {
         let task = Task(
-            task: textView.text,
+            task: taskTF.text ?? "",
             category: setTaskCategory(),
             finishDate: "",
             isCompleted: false,
@@ -53,7 +55,10 @@ extension NewTaskViewController: UITextFieldDelegate {
             view.endEditing(true)
         }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        view.endEditing(true)
+       
+        if let textField = taskTF {
+            textField.resignFirstResponder()
+        }
         
         return true
     }
