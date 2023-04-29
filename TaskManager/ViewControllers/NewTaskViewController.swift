@@ -13,6 +13,8 @@ final class NewTaskViewController: UIViewController {
     @IBOutlet var segmentedControl: UISegmentedControl!
     @IBOutlet var datePicker: UIDatePicker!
     
+    var tasks: [Task] = []
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
@@ -20,15 +22,19 @@ final class NewTaskViewController: UIViewController {
  
     @IBAction func addingButtonTapped() {
         let task = Task(
-            name: textView.text,
+            task: textView.text,
             category: setTaskCategory(),
+            finishDate: "",
             isCompleted: false,
             date: datePicker.date
         )
+        
+        tasks.append(task)
     }
-        @IBAction func cancelButtonTapped() {
-            dismiss(animated: true)
-        }
+    
+    @IBAction func cancelButtonTapped() {
+        dismiss(animated: true)
+    }
     
     private func setTaskCategory() -> CategoryTask {
         var category: CategoryTask = .home
@@ -36,7 +42,7 @@ final class NewTaskViewController: UIViewController {
         switch segmentedControl.selectedSegmentIndex {
         case 0: category = .home
         case 1: category = .work
-        default: category = .familly
+        default: category = .family
         }
         
         return category

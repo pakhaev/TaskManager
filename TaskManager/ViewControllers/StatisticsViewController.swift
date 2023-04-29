@@ -16,7 +16,7 @@ final class StatisticsViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
     
     // MARK: - Public properties
-    var tasks = Task.getTasks()
+    var tasks: [Task] = []
     
     // MARK: - Private properties
     private var completedCounts: [CategoryTask: Int] = [:]
