@@ -8,8 +8,8 @@
 import UIKit
 
 class TasksViewController: UIViewController {
-    // MARK: - Private constant
-    private var getTasks = Task.getTasks()
+    // MARK: - Public properties
+    var tasks: [Task] = []
     
     // MARK: - Variables
     var selectedCategory: CategoryTask? = .home {
@@ -31,6 +31,11 @@ class TasksViewController: UIViewController {
         tableView.separatorStyle = .none
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tasks = Task.getTasks()
+        tableView.reloadData()
+    }
+    
     // MARK: - Private @IBAction
     @IBAction func segmentControlValueChanged(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
@@ -48,13 +53,13 @@ class TasksViewController: UIViewController {
 extension TasksViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let filteredTasks = getTasks.filter { $0.category == selectedCategory }
+        let filteredTasks = tasks.filter { $0.category == selectedCategory }
         return filteredTasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TasksTableViewCell", for: indexPath) as! TasksTableViewCell
-        let task = getTasks.filter { task in
+        let task = tasks.filter { task in
             selectedCategory == nil || task.category == selectedCategory }[indexPath.row]
         cell.descriptionTask.text = task.task
         cell.dateToFinishTask.text = task.finishDate
@@ -76,7 +81,7 @@ extension TasksViewController: UITableViewDelegate {
 extension TasksViewController: TasksTableViewCellDelegate {
     func completeButtonTapped(cell: TasksTableViewCell) {
         if let indexPath = tableView.indexPath(for: cell) {
-            getTasks.remove(at: indexPath.row)
+            tasks.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }

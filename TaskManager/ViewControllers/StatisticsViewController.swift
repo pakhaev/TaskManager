@@ -31,6 +31,11 @@ final class StatisticsViewController: UIViewController {
         completedSC.setTitle(Completed.inCompleted.rawValue, forSegmentAt: 1)
         
         setAllTasksCount(completedSC.selectedSegmentIndex)
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tasks = Task.getTasks()
     }
     
     // MARK: - IBAction
