@@ -7,43 +7,57 @@
 
 import Foundation
 
-struct Task {
-    let task: String
-    let category: CategoryTask
-    let finishDate: String
-    var isCompleted: Bool
-    let date: Date
+final class DataStore {
+    static let shared = DataStore()
     
-    static func getTasks() -> [Task] {
-        [
-            Task(
-                task: "Покушать",
-                category: .home,
-                finishDate: "30.04",
-                isCompleted: false,
-                date: Date()
-            ),
-            Task(
-                task: "Помочь жене",
-                category: .family,
-                finishDate: "01.05",
-                isCompleted: false,
-                date: Date()
-            ),
-            Task(
-                task: "Поработать",
-                category: .work,
-                finishDate: "02.05",
-                isCompleted: false,
-                date: Date()
-            ),
-        ]
+    var tasks = [
+        "Покушать",
+        "Помочь жене",
+        "Поработать",
+        "Выйти прогуляться",
+        "Сходить в магазин",
+        "Помыть машину"
+    ]
+    
+    var categories = [
+        CategoryTask.home,
+        CategoryTask.family,
+        CategoryTask.work,
+        CategoryTask.home,
+        CategoryTask.home,
+        CategoryTask.work
+    ]
+    
+    var finishDate = [
+        "01.04",
+        "",
+        "02.01",
+        "22.03",
+        "",
+        "15.03"
+    ]
+    
+    var isCompleted = [
+        true,
+        false,
+        true,
+        false,
+        false,
+        true
+    ]
+    
+    var date = [
+        Date(),
+        Date(),
+        Date(),
+        Date(),
+        Date(),
+        Date()
+    ]
+    
+    func display() {
+        print(tasks)
     }
-}
-
-
-enum CategoryTask: String {
-    case home = "Дом"
-    case work = "Работа"
-    case family = "Семья"
+    
+    private init() {}
 }

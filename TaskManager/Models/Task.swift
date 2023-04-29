@@ -14,29 +14,38 @@ struct Task {
     let date: Date
     
     static func getTasks() -> [Task] {
-        [
-            Task(
-                task: "Покушать",
-                category: .home,
-                finishDate: "30.04",
-                isCompleted: false,
-                date: Date()
-            ),
-            Task(
-                task: "Помочь жене",
-                category: .family,
-                finishDate: "01.05",
-                isCompleted: true,
-                date: Date()
-            ),
-            Task(
-                task: "Поработать",
-                category: .work,
-                finishDate: "02.05",
-                isCompleted: false,
-                date: Date()
-            ),
-        ]
+        var resultTasks: [Task] = []
+        let dataStore = DataStore.shared
+        
+        let tasks = dataStore.tasks
+        let finishDate = dataStore.finishDate
+        let categories = dataStore.categories
+        let date = dataStore.date
+        let isCompleted = dataStore.isCompleted
+        
+        let minCount = min(
+            tasks.count,
+            finishDate.count,
+            categories.count,
+            date.count,
+            isCompleted.count
+        )
+        
+        print("Count = \(minCount)")
+        
+        for index in 0..<minCount {
+            let task = Task(
+                task: tasks[index],
+                category: categories[index],
+                finishDate: finishDate[index],
+                isCompleted: isCompleted[index],
+                date: date[index]
+            )
+            
+            resultTasks.append(task)
+        }
+        
+        return resultTasks
     }
 }
 
