@@ -33,7 +33,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="oS2-8u-MED">
                                         <rect key="frame" x="0.0" y="82.666666666666657" width="361" height="34"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <outlet property="delegate" destination="Y6W-OH-hqX" id="Vha-Ej-ekU"/>
@@ -101,6 +101,7 @@
                     <connections>
                         <outlet property="datePicker" destination="pSR-Zm-mZr" id="ynH-hI-LAy"/>
                         <outlet property="segmentedControl" destination="qzg-Yz-Eeg" id="hFe-Wx-smQ"/>
+                        <outlet property="taskTF" destination="oS2-8u-MED" id="hM4-rI-7QY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
