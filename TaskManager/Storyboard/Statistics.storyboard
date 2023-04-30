@@ -75,7 +75,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="S8K-qq-WUJ" secondAttribute="trailing" constant="79" id="tTs-qY-Vcm"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Statistics" selectedImage="list.bullet.rectangle" catalog="system" id="Kc0-nN-U3M"/>
+                    <tabBarItem key="tabBarItem" title="Statistics" image="list.bullet.rectangle" catalog="system" id="Kc0-nN-U3M"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="completedCountLabel" destination="DxM-1Z-98C" id="Ucx-el-Jzu"/>

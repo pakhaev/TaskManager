@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="YiT-vz-FV8">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Jh1-c8-mto" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Jh1-c8-mto" customClass="TabBarViewController" customModule="TaskManager" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="scM-1G-ToF">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -20,6 +20,7 @@
                         <segue destination="Ez0-cB-HTM" kind="relationship" relationship="viewControllers" id="P04-nj-UdF"/>
                         <segue destination="vXC-Yr-VBL" kind="relationship" relationship="viewControllers" id="EaO-Pr-dCC"/>
                         <segue destination="6hM-ft-ZgP" kind="relationship" relationship="viewControllers" id="Vts-Fg-KbE"/>
+                        <segue destination="jh5-o7-5PX" kind="relationship" relationship="viewControllers" id="D6w-ZY-N58"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pe7-YW-fZm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -34,7 +35,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQ4-Bh-rO6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-630" y="446"/>
+            <point key="canvasLocation" x="-554" y="446"/>
         </scene>
         <!--NewTaskVC-->
         <scene sceneID="864-N3-Tiz">
@@ -44,7 +45,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pra-HQ-o9R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-257" y="446"/>
+            <point key="canvasLocation" x="-92" y="446"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="Tws-Ke-wFF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Info" referencedIdentifier="Info" id="jh5-o7-5PX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Xcc-AT-bS7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u46-t9-P39" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="446"/>
         </scene>
         <!--Statistics-->
         <scene sceneID="zsd-rt-r6Z">
@@ -54,7 +65,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEK-aE-D4a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="79" y="446"/>
+            <point key="canvasLocation" x="363" y="446"/>
         </scene>
     </scenes>
 </document>

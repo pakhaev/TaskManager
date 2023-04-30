@@ -8,60 +8,109 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Info-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Info" id="Y6W-OH-hqX" customClass="InfoViewController" customModule="TaskManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="2eG-LZ-YBs">
-                                <rect key="frame" x="16" y="348" width="361" height="156.33333333333337"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Хусейн Пахаев" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjW-IX-fVP">
-                                        <rect key="frame" x="121" y="0.0" width="119.33333333333331" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Адам Таймасханов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipi-C3-efz">
-                                        <rect key="frame" x="104.66666666666669" y="45.333333333333314" width="152" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Денис Китаев" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljn-86-7Ys">
-                                        <rect key="frame" x="125" y="90.666666666666686" width="111" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Иван Поддубнов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMr-NI-b2v">
-                                        <rect key="frame" x="113.66666666666666" y="136" width="134" height="20.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.34 SwiftBook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oz-y9-06x">
-                                <rect key="frame" x="138.66666666666666" y="777.66666666666663" width="116" height="20.333333333333371"/>
+                                <rect key="frame" x="138.66666666666666" y="728.66666666666663" width="116" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Команда" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIy-rA-Yqj">
+                                <rect key="frame" x="152" y="79" width="89" height="26.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="yxp-v1-jMS">
+                                <rect key="frame" x="68" y="231.66666666666663" width="257" height="389"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="P3F-su-bOQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="389"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="khusein" translatesAutoresizingMaskIntoConstraints="NO" id="R5B-Cf-oJF">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="R5B-Cf-oJF" secondAttribute="height" multiplier="1:1" id="dsH-oO-FfO"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cZe-Zy-bWv">
+                                                <rect key="frame" x="0.0" y="103.00000000000003" width="80" height="80"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="denis" translatesAutoresizingMaskIntoConstraints="NO" id="6Vk-Q1-Zwo">
+                                                <rect key="frame" x="0.0" y="206.00000000000003" width="80" height="79.999999999999972"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="6Vk-Q1-Zwo" secondAttribute="height" multiplier="1:1" id="trd-zD-CiW"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ivan" translatesAutoresizingMaskIntoConstraints="NO" id="X17-ko-uly">
+                                                <rect key="frame" x="0.0" y="309" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="X17-ko-uly" secondAttribute="height" multiplier="1:1" id="ZQk-Dk-SE9"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="1NN-gP-lpu">
+                                        <rect key="frame" x="105" y="29.333333333333343" width="152" height="330.33333333333326"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Хусейн Пахаев" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjW-IX-fVP">
+                                                <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Адам Таймасханов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipi-C3-efz">
+                                                <rect key="frame" x="0.0" y="103.33333333333331" width="152" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Денис Китаев" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljn-86-7Ys">
+                                                <rect key="frame" x="0.0" y="206.66666666666669" width="111" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Иван Поддубнов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMr-NI-b2v">
+                                                <rect key="frame" x="0.0" y="310" width="134" height="20.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2eG-LZ-YBs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="35i-oB-GML"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2eG-LZ-YBs" secondAttribute="trailing" constant="16" id="UMr-pI-5jc"/>
+                            <constraint firstItem="IIy-rA-Yqj" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="0HL-4O-vEF"/>
+                            <constraint firstItem="IIy-rA-Yqj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="DSK-jN-9t2"/>
+                            <constraint firstItem="X17-ko-uly" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0938967" id="U8t-Xl-Cw5"/>
+                            <constraint firstItem="yxp-v1-jMS" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="UGO-6G-a4Y"/>
                             <constraint firstItem="2Oz-y9-06x" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="V1A-jW-9dk"/>
+                            <constraint firstItem="yxp-v1-jMS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="VkL-in-MDd"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="2Oz-y9-06x" secondAttribute="bottom" constant="20" id="k23-kH-N7G"/>
-                            <constraint firstItem="2eG-LZ-YBs" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="ltg-jw-hO0"/>
+                            <constraint firstItem="1NN-gP-lpu" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.387715" id="pPr-uY-Gge"/>
+                            <constraint firstItem="P3F-su-bOQ" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.456573" id="xKI-kF-F1E"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Info" image="info.circle" catalog="system" id="vFq-Vt-uf8"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outletCollection property="personImages" destination="R5B-Cf-oJF" collectionClass="NSMutableArray" id="KOc-fP-eof"/>
+                        <outletCollection property="personImages" destination="cZe-Zy-bWv" collectionClass="NSMutableArray" id="FUV-EN-mnu"/>
+                        <outletCollection property="personImages" destination="6Vk-Q1-Zwo" collectionClass="NSMutableArray" id="a1z-jj-Ihd"/>
+                        <outletCollection property="personImages" destination="X17-ko-uly" collectionClass="NSMutableArray" id="gzZ-6i-3C3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,6 +118,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="denis" width="720" height="1280"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
+        <image name="ivan" width="813" height="741"/>
+        <image name="khusein" width="1269" height="1280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
