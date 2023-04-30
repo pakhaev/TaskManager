@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Task {
+struct Task: Equatable{
     let task: String
     let category: CategoryTask
     let finishDate: String
