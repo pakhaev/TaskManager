@@ -31,8 +31,6 @@ struct Task {
             isCompleted.count
         )
         
-        print("Count = \(minCount)")
-        
         for index in 0..<minCount {
             let task = Task(
                 task: tasks[index],

@@ -35,6 +35,7 @@ final class StatisticsViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
         tasks = Task.getTasks()
     }
     

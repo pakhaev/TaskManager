@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TabBarViewController.swift
 //  TaskManager
 //
 //  Created by Khusain on 29.04.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UITabBarController {
+class TabBarViewController: UITabBarController {
     
 //    private let tasks = Task.getTasks()
     
