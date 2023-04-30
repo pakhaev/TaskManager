@@ -15,10 +15,11 @@
 		E053C88429FD423F009C83EF /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E053C88329FD423F009C83EF /* Statistics.storyboard */; };
 		E053C88629FD4252009C83EF /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053C88529FD4252009C83EF /* StatisticsViewController.swift */; };
 		E053C88929FD42AA009C83EF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053C88829FD42AA009C83EF /* Task.swift */; };
+		E05D77D929FECC1200C4FB78 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05D77D829FECC1200C4FB78 /* InfoViewController.swift */; };
 		E06DB19229FD8EDD008F9774 /* NewTaskVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06DB19129FD8EDD008F9774 /* NewTaskVC.storyboard */; };
 		E06DB19429FD8EE7008F9774 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06DB19329FD8EE7008F9774 /* NewTaskViewController.swift */; };
 		E06DB19629FD9022008F9774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06DB19529FD9022008F9774 /* Main.storyboard */; };
-		E06DB19A29FD944E008F9774 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06DB19929FD944E008F9774 /* ViewController.swift */; };
+		E06DB19A29FD944E008F9774 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06DB19929FD944E008F9774 /* TabBarViewController.swift */; };
 		E06DB1B229FDBD38008F9774 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06DB1B129FDBD38008F9774 /* DataStore.swift */; };
 		E06DB1B529FDBD4B008F9774 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06DB1B329FDBD4B008F9774 /* Task.storyboard */; };
 		E06DB1BA29FDBD5D008F9774 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06DB1B629FDBD5D008F9774 /* TasksViewController.swift */; };
@@ -37,10 +38,11 @@
 		E053C88329FD423F009C83EF /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
 		E053C88529FD4252009C83EF /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		E053C88829FD42AA009C83EF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		E05D77D829FECC1200C4FB78 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		E06DB19129FD8EDD008F9774 /* NewTaskVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewTaskVC.storyboard; sourceTree = "<group>"; };
 		E06DB19329FD8EE7008F9774 /* NewTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
 		E06DB19529FD9022008F9774 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		E06DB19929FD944E008F9774 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E06DB19929FD944E008F9774 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		E06DB1B129FDBD38008F9774 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		E06DB1B429FDBD4B008F9774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Task.storyboard; sourceTree = "<group>"; };
 		E06DB1B629FDBD5D008F9774 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
@@ -118,7 +120,8 @@
 				E06DB1B629FDBD5D008F9774 /* TasksViewController.swift */,
 				E053C88529FD4252009C83EF /* StatisticsViewController.swift */,
 				E06DB19329FD8EE7008F9774 /* NewTaskViewController.swift */,
-				E06DB19929FD944E008F9774 /* ViewController.swift */,
+				E06DB19929FD944E008F9774 /* TabBarViewController.swift */,
+				E05D77D829FECC1200C4FB78 /* InfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -226,8 +229,9 @@
 			files = (
 				E06DB1B229FDBD38008F9774 /* DataStore.swift in Sources */,
 				E06DB1BA29FDBD5D008F9774 /* TasksViewController.swift in Sources */,
-				E06DB19A29FD944E008F9774 /* ViewController.swift in Sources */,
+				E06DB19A29FD944E008F9774 /* TabBarViewController.swift in Sources */,
 				E06DB1BC29FDBD5D008F9774 /* TasksTableViewCell.swift in Sources */,
+				E05D77D929FECC1200C4FB78 /* InfoViewController.swift in Sources */,
 				E053C86D29FD3B65009C83EF /* AppDelegate.swift in Sources */,
 				E053C88929FD42AA009C83EF /* Task.swift in Sources */,
 				E053C86F29FD3B65009C83EF /* SceneDelegate.swift in Sources */,
