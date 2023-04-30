@@ -29,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="yxp-v1-jMS">
-                                <rect key="frame" x="68" y="231.66666666666663" width="257" height="389"/>
+                                <rect key="frame" x="16" y="231.66666666666663" width="361" height="389"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="P3F-su-bOQ">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="389"/>
@@ -40,7 +40,7 @@
                                                     <constraint firstAttribute="width" secondItem="R5B-Cf-oJF" secondAttribute="height" multiplier="1:1" id="dsH-oO-FfO"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cZe-Zy-bWv">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adam" translatesAutoresizingMaskIntoConstraints="NO" id="cZe-Zy-bWv">
                                                 <rect key="frame" x="0.0" y="103.00000000000003" width="80" height="80"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="denis" translatesAutoresizingMaskIntoConstraints="NO" id="6Vk-Q1-Zwo">
@@ -58,7 +58,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="1NN-gP-lpu">
-                                        <rect key="frame" x="105" y="29.333333333333343" width="152" height="330.33333333333326"/>
+                                        <rect key="frame" x="105" y="29.333333333333343" width="256" height="330.33333333333326"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Хусейн Пахаев" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjW-IX-fVP">
                                                 <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="20.333333333333332"/>
@@ -95,9 +95,10 @@
                             <constraint firstItem="IIy-rA-Yqj" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="0HL-4O-vEF"/>
                             <constraint firstItem="IIy-rA-Yqj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="DSK-jN-9t2"/>
                             <constraint firstItem="X17-ko-uly" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0938967" id="U8t-Xl-Cw5"/>
-                            <constraint firstItem="yxp-v1-jMS" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="UGO-6G-a4Y"/>
                             <constraint firstItem="2Oz-y9-06x" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="V1A-jW-9dk"/>
-                            <constraint firstItem="yxp-v1-jMS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="VkL-in-MDd"/>
+                            <constraint firstItem="yxp-v1-jMS" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="a9w-SW-pyI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yxp-v1-jMS" secondAttribute="trailing" constant="16" id="cZP-hi-g5G"/>
+                            <constraint firstItem="yxp-v1-jMS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="h86-3c-dDh"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="2Oz-y9-06x" secondAttribute="bottom" constant="20" id="k23-kH-N7G"/>
                             <constraint firstItem="1NN-gP-lpu" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.387715" id="pPr-uY-Gge"/>
                             <constraint firstItem="P3F-su-bOQ" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.456573" id="xKI-kF-F1E"/>
@@ -118,6 +119,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="adam" width="640" height="640"/>
         <image name="denis" width="720" height="1280"/>
         <image name="info.circle" catalog="system" width="128" height="123"/>
         <image name="ivan" width="813" height="741"/>
